@@ -1,0 +1,7 @@
+
+from subclases import coche
+from subclases import bicicleta
+bmxbicycle = bicicleta("roja","redondas","deportiva")
+bmw = coche("rojo","cuadradas","200","1500")
+vehiculos = [bmw,bmxbicycle]
+print(vehiculos)
