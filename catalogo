@@ -1,6 +1,9 @@
 from subsubclases.motocicleta import Motocicleta
 from subsubclases.camioneta import Camioneta
 bmxbicycle = Motocicleta("roja","redondas","deportiva",200,1500)
-bmw = Camioneta("rojo","cuadradas",200,1500,"1000kg")
-vehiculos = [bmw.__str__(),bmxbicycle.__str__()]
-print(vehiculos)
+bmw = Camioneta("rojo","cuadradas",200,1500,"1000")
+vehiculos = [bmxbicycle,bmw]
+def catalogar(ruedas=0):
+    for vehiculo in vehiculos:
+        print({vehiculo.__name__():vehiculo.__str__()})
+catalogar()
