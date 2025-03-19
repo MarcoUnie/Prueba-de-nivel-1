@@ -1,7 +1,6 @@
-
-from subclases import coche
-from subclases import bicicleta
-bmxbicycle = bicicleta("roja","redondas","deportiva")
-bmw = coche("rojo","cuadradas","200","1500")
-vehiculos = [bmw,bmxbicycle]
+from subsubclases.motocicleta import Motocicleta
+from subsubclases.camioneta import Camioneta
+bmxbicycle = Motocicleta("roja","redondas","deportiva",200,1500)
+bmw = Camioneta("rojo","cuadradas",200,1500,"1000kg")
+vehiculos = [bmw.__str__(),bmxbicycle.__str__()]
 print(vehiculos)
