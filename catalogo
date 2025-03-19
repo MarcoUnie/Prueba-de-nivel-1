@@ -11,4 +11,4 @@ def catalogar(ruedas=None):
             vehiculos_encontrados += 1
     if ruedas != None:
         print(f"Se han encontrado {vehiculos_encontrados} vehículos con {ruedas} ruedas")
-catalogar(2)
+catalogar(10)
